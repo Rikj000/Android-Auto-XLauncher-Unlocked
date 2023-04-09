@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LaunchOptionsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp" >
+
+        <!-- Settings Launcher Instructions -->
+        <LinearLayout
+            android:id="@+id/linear_layout_launcher_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/textview_material3_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/material3"
+                android:textSize="18sp"
+                android:layout_marginBottom="5sp"/>
+
+            <TextView
+                android:id="@+id/textview_material3_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/material3_description"
+                android:layout_marginBottom="5sp"/>
+
+            <TextView
+                android:id="@+id/textview_classic_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/classic_no_root"
+                android:textSize="18sp"
+                android:layout_marginBottom="5sp" />
+
+            <TextView
+                android:id="@+id/textview_classic_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/classic_description" />
+        </LinearLayout>
+
+        <!-- Settings Launcher Options -->
+        <LinearLayout
+            android:id="@+id/linear_layout_launcher_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linear_layout_launcher_instructions" >
+
+            <Button
+                android:id="@+id/button_material3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/material3"
+                android:layout_marginHorizontal="10dp"
+                tools:ignore="ButtonStyle" />
+            <Button
+                android:id="@+id/button_classic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/classic"
+                android:layout_marginHorizontal="10dp"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+
+        <!-- Debug Launcher Instructions -->
+        <LinearLayout
+            android:id="@+id/linear_layout_debug_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            app:layout_constraintTop_toBottomOf="@id/linear_layout_launcher_options">
+
+            <TextView
+                android:id="@+id/textview_debug_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/debug"
+                android:textSize="18sp"
+                android:layout_marginBottom="10sp"/>
+
+            <TextView
+                android:id="@+id/textview_debug_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/debug_description"/>
+        </LinearLayout>
+
+        <!-- Debug Launcher Options -->
+        <LinearLayout
+            android:id="@+id/linear_layout_debug_options"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lines="5"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linear_layout_debug_instructions"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp" >
+
+            <LinearLayout
+                android:id="@+id/linear_layout_debug_options_row_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linear_layout_debug_instructions" >
+
+                <Button
+                    android:id="@+id/button_interactive_troubleshooter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/interactive_troubleshooter"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginHorizontal="5dp"
+                    tools:ignore="ButtonStyle"
+                    android:textSize="11sp" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <Button
+                    android:id="@+id/button_troubleshooter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/troubleshooter"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginHorizontal="5dp"
+                    tools:ignore="ButtonStyle"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_debug_options_row_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linear_layout_debug_instructions" >
+
+                <Button
+                    android:id="@+id/button_developer_settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/developer_settings"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginHorizontal="5dp"
+                    tools:ignore="ButtonStyle"
+                    android:textSize="11sp" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <Button
+                    android:id="@+id/button_engineer_settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/engineer_settings"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginHorizontal="5dp"
+                    tools:ignore="ButtonStyle"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_debug_options_row_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linear_layout_debug_instructions" >
+
+                <Button
+                    android:id="@+id/button_app_launcher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_launcher"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginHorizontal="5dp"
+                    tools:ignore="ButtonStyle"
+                    android:textSize="11sp" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <Button
+                    android:id="@+id/button_app_quality_tester"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_quality_tester"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginHorizontal="5dp"
+                    tools:ignore="ButtonStyle"
+                    android:textSize="11sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_debug_options_row_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linear_layout_debug_instructions" >
+
+                <Button
+                    android:id="@+id/button_assistant_shortcut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/assistant_shortcut"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginHorizontal="5dp"
+                    tools:ignore="ButtonStyle"
+                    android:textSize="11sp" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/button_feedback_reports"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/feedback_reports"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginHorizontal="5dp"
+                    tools:ignore="ButtonStyle"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_debug_options_row_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linear_layout_debug_instructions" >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <Button
+                    android:id="@+id/button_primes_events"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/primes_events"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginHorizontal="5dp"
+                    tools:ignore="ButtonStyle"
+                    android:textSize="11sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Default Option -->
+        <LinearLayout
+            android:id="@+id/linear_layout_default_option"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lines="3"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linear_layout_debug_options"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="-20dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:id="@+id/textview_default_warning_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_option"
+                android:textSize="18sp"
+                android:layout_marginBottom="10sp" />
+
+            <TextView
+                android:id="@+id/textview_default_warning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_option_description" />
+
+            <CheckBox
+                android:id="@+id/checkbox_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_option_toggle" />
+        </LinearLayout>
+
+        <!-- Footer -->
+        <TextView
+            android:id="@+id/textview_footer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/footer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linear_layout_default_option"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

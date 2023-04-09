@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.google.android.projection.gearhead.xunlocked.MainActivity">
+
+    <item
+        android:id="@+id/action_source_code"
+        android:orderInCategory="100"
+        android:title="@string/source_code"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_updates"
+        android:orderInCategory="100"
+        android:title="@string/releases"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_magisk"
+        android:orderInCategory="100"
+        android:title="@string/magisk"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_lsposed"
+        android:orderInCategory="100"
+        android:title="@string/lsposed"
+        app:showAsAction="never" />
+</menu>
