@@ -1,4 +1,41 @@
 <resources>
     <!-- App name -->
     <string name="app_name">Android Auto - XLauncher Unlocked</string>
+    <string name="app_title">AA - XLauncher Unlocked</string>
+
+    <!-- Menu -->
+    <string name="source_code">Source code</string>
+    <string name="releases">Releases</string>
+    <string name="magisk">Magisk</string>
+    <string name="lsposed">LSPosed</string>
+
+    <!-- Main launch options -->
+    <string name="material3">Material3</string>
+    <string name="material3_description">Launch the Android Auto settings,\nwith the hidden/experimental Material3 style!\nRequires root to access!</string>
+    <string name="classic">Classic</string>
+    <string name="classic_no_root">Classic (No root)</string>
+    <string name="classic_description">Launch the Android Auto settings,\nwith the classic/stable style!</string>
+
+    <!-- Debug launch options -->
+    <string name="debug">Debug</string>
+    <string name="debug_description">Various hidden Android Auto debug screens,\nRequires root to access!</string>
+
+    <string name="developer_settings">Developer Settings</string>
+    <string name="engineer_settings">Engineer Settings</string>
+    <string name="interactive_troubleshooter">Interactive Troubleshooter</string>
+    <string name="troubleshooter">Troubleshooter</string>
+    <string name="app_quality_tester">App Quality Tester</string>
+    <string name="feedback_reports">Feedback Reports</string>
+    <string name="primes_events">PRIMES Events</string>
+    <string name="assistant_shortcut">Assistant Shortcut</string>
+    <string name="app_launcher">App Launcher</string>
+
+    <!-- Default launch option -->
+    <string name="default_option">Default</string>
+    <string name="default_option_description">Options to re-access this screen,\nonce a default is set:\n - Press the back button in Android Auto\n - Switch back through Recent Apps\n - Wipe the data/cache of this app</string>
+
+    <string name="default_option_toggle">Set the next used launch option as default</string>
+
+    <!-- Footer -->
+    <string name="footer">Made with ❤️ for Modding and 🖕 for Google by Rikj000</string>
 </resources>
