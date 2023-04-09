@@ -14,5 +14,5 @@ dependencyResolutionManagement {
         jcenter()
     }
 }
-rootProject.name = "Android Auto Xposed Unlocked"
+rootProject.name = "Android-Auto-XLauncher-Unlocked"
 include ':app'
