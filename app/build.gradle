@@ -11,8 +11,8 @@ android {
         applicationId "com.google.android.projection.gearhead.xunlocked"
         minSdk 24
         targetSdk 33
-        versionCode 20
-        versionName "2.0"
+        versionCode 201
+        versionName "2.0.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
