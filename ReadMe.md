@@ -10,7 +10,7 @@
     </a>
 </p>
 
-Custom Android Auto launcher, unleash your AA, unlock more features!
+Custom Android Auto launcher, unleash your AA app, unlock more features!
 
 ## Installation
 
