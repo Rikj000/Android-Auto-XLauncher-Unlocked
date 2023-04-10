@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -110,185 +111,194 @@
         </LinearLayout>
 
         <!-- Debug Launcher Options -->
-        <LinearLayout
-            android:id="@+id/linear_layout_debug_options"
+        <HorizontalScrollView
+            android:id="@+id/horizontal_scroll_view_debug_options"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:lines="5"
-            android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/linear_layout_debug_instructions"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp" >
+            android:layout_marginBottom="10dp"
+            android:fillViewport="true">
 
             <LinearLayout
-                android:id="@+id/linear_layout_debug_options_row_1"
+                android:id="@+id/linear_layout_debug_options"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:lines="2"
-                android:orientation="horizontal"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/linear_layout_debug_instructions" >
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:lines="5">
 
-                <Button
-                    android:id="@+id/button_interactive_troubleshooter"
-                    android:layout_width="wrap_content"
+                <!-- Debug Launcher Options - Row 1 -->
+                <LinearLayout
+                    android:id="@+id/linear_layout_debug_options_row_1"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/interactive_troubleshooter"
-                    android:layout_gravity="center_vertical|center_horizontal"
-                    android:layout_marginHorizontal="5dp"
-                    tools:ignore="ButtonStyle"
-                    android:textSize="11sp" />
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1" />
-                <Button
-                    android:id="@+id/button_troubleshooter"
-                    android:layout_width="wrap_content"
+                    android:lines="2"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/linear_layout_debug_instructions" >
+
+                    <Button
+                        android:id="@+id/button_interactive_troubleshooter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/interactive_troubleshooter"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginHorizontal="5dp"
+                        tools:ignore="ButtonStyle"
+                        android:textSize="11sp" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                    <Button
+                        android:id="@+id/button_troubleshooter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/troubleshooter"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginHorizontal="5dp"
+                        tools:ignore="ButtonStyle"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <!-- Debug Launcher Options - Row 2 -->
+                <LinearLayout
+                    android:id="@+id/linear_layout_debug_options_row_2"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/troubleshooter"
-                    android:layout_gravity="center_vertical|center_horizontal"
-                    android:layout_marginHorizontal="5dp"
-                    tools:ignore="ButtonStyle"
-                    android:textSize="11sp" />
+                    android:lines="2"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/linear_layout_debug_instructions" >
+
+                    <Button
+                        android:id="@+id/button_developer_settings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/developer_settings"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginHorizontal="5dp"
+                        tools:ignore="ButtonStyle"
+                        android:textSize="11sp" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                    <Button
+                        android:id="@+id/button_engineer_settings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/engineer_settings"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginHorizontal="5dp"
+                        tools:ignore="ButtonStyle"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <!-- Debug Launcher Options - Row 3 -->
+                <LinearLayout
+                    android:id="@+id/linear_layout_debug_options_row_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="2"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/linear_layout_debug_instructions" >
+
+                    <Button
+                        android:id="@+id/button_app_launcher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_launcher"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginHorizontal="5dp"
+                        tools:ignore="ButtonStyle"
+                        android:textSize="11sp" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                    <Button
+                        android:id="@+id/button_app_quality_tester"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_quality_tester"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginHorizontal="5dp"
+                        tools:ignore="ButtonStyle"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <!-- Debug Launcher Options - Row 4 -->
+                <LinearLayout
+                    android:id="@+id/linear_layout_debug_options_row_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="2"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/linear_layout_debug_instructions" >
+
+                    <Button
+                        android:id="@+id/button_assistant_shortcut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/assistant_shortcut"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginHorizontal="5dp"
+                        tools:ignore="ButtonStyle"
+                        android:textSize="11sp" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/button_feedback_reports"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/feedback_reports"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginHorizontal="5dp"
+                        tools:ignore="ButtonStyle"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <!-- Debug Launcher Options - Row 5 -->
+                <LinearLayout
+                    android:id="@+id/linear_layout_debug_options_row_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="2"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/linear_layout_debug_instructions" >
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                    <Button
+                        android:id="@+id/button_primes_events"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/primes_events"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginHorizontal="5dp"
+                        tools:ignore="ButtonStyle"
+                        android:textSize="11sp" />
+                </LinearLayout>
             </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/linear_layout_debug_options_row_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:lines="2"
-                android:orientation="horizontal"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/linear_layout_debug_instructions" >
-
-                <Button
-                    android:id="@+id/button_developer_settings"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/developer_settings"
-                    android:layout_gravity="center_vertical|center_horizontal"
-                    android:layout_marginHorizontal="5dp"
-                    tools:ignore="ButtonStyle"
-                    android:textSize="11sp" />
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1" />
-                <Button
-                    android:id="@+id/button_engineer_settings"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/engineer_settings"
-                    android:layout_gravity="center_vertical|center_horizontal"
-                    android:layout_marginHorizontal="5dp"
-                    tools:ignore="ButtonStyle"
-                    android:textSize="11sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/linear_layout_debug_options_row_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:lines="2"
-                android:orientation="horizontal"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/linear_layout_debug_instructions" >
-
-                <Button
-                    android:id="@+id/button_app_launcher"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/app_launcher"
-                    android:layout_gravity="center_vertical|center_horizontal"
-                    android:layout_marginHorizontal="5dp"
-                    tools:ignore="ButtonStyle"
-                    android:textSize="11sp" />
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1" />
-                <Button
-                    android:id="@+id/button_app_quality_tester"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/app_quality_tester"
-                    android:layout_gravity="center_vertical|center_horizontal"
-                    android:layout_marginHorizontal="5dp"
-                    tools:ignore="ButtonStyle"
-                    android:textSize="11sp" />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/linear_layout_debug_options_row_4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:lines="2"
-                android:orientation="horizontal"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/linear_layout_debug_instructions" >
-
-                <Button
-                    android:id="@+id/button_assistant_shortcut"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/assistant_shortcut"
-                    android:layout_gravity="center_vertical|center_horizontal"
-                    android:layout_marginHorizontal="5dp"
-                    tools:ignore="ButtonStyle"
-                    android:textSize="11sp" />
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1" />
-
-                <Button
-                    android:id="@+id/button_feedback_reports"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/feedback_reports"
-                    android:layout_gravity="center_vertical|center_horizontal"
-                    android:layout_marginHorizontal="5dp"
-                    tools:ignore="ButtonStyle"
-                    android:textSize="11sp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/linear_layout_debug_options_row_5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:lines="2"
-                android:orientation="horizontal"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/linear_layout_debug_instructions" >
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1" />
-                <Button
-                    android:id="@+id/button_primes_events"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/primes_events"
-                    android:layout_gravity="center_vertical|center_horizontal"
-                    android:layout_marginHorizontal="5dp"
-                    tools:ignore="ButtonStyle"
-                    android:textSize="11sp" />
-            </LinearLayout>
-        </LinearLayout>
+        </HorizontalScrollView>
 
         <!-- Default Option -->
         <LinearLayout
@@ -299,7 +309,7 @@
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/linear_layout_debug_options"
+            app:layout_constraintTop_toBottomOf="@id/horizontal_scroll_view_debug_options"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="-20dp"
             android:layout_marginRight="15dp">
@@ -333,8 +343,7 @@
             android:text="@string/footer"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/linear_layout_default_option"
-            />
+            app:layout_constraintTop_toBottomOf="@id/linear_layout_default_option" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
