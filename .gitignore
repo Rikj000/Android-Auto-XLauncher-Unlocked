@@ -7,4 +7,5 @@
 local.properties
 /local.properties
 /captures
-/build
+*/build
+*/release
