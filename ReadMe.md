@@ -17,7 +17,7 @@ Custom Android Auto launcher, unleash your AA, unlock more features!
 1. Install [Magisk](https://topjohnwu.github.io/Magisk/install.html)
 2. Magisk => Settings => Magisk => Check `Zygisk`
 3. Install [LSPosed (Zygisk) + Shamiko](https://lsposed.org/)
-4. Install the [Android-Auto-XLauncher-Unlocked](https://github.com/Rikj000/Android-Auto-XLauncher-Unlocked/releases) app
+4. Install the [Android-Auto-XLauncher-Unlocked](https://github.com/Rikj000/Android-Auto-XLauncher-Unlocked/releases) app with [KingInstaller](https://github.com/fcaronte/KingInstaller)
 5. LSPosed => Modules => Check `Enable module` + Check `Android Auto`
 6. Reboot
 
