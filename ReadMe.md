@@ -1,14 +1,18 @@
-# Android Auto - XLauncher Unlocked
+# Android Auto - XLauncher Unlocked (AAXLU)
 
 <p align="left">
-    <a href="https://www.iconomi.com/register?ref=zQQPK">
-        <img src="https://img.shields.io/badge/ICONOMI-Join-blue?logo=bitcoin&logoColor=white" alt="ICONOMI - The world’s largest crypto strategy provider">
-    </a> <a href="https://github.com/Rikj000/Android-Auto-Xposed-Unlocked/blob/development/LICENSE">
-        <img src="https://img.shields.io/github/license/Rikj000/Android-Auto-Xposed-Unlocked?label=License&logo=gnu" alt="GNU General Public License">
     <a href="https://forum.xda-developers.com/t/release-v2-0-1-android-auto-xlauncher-unlocked-aaxlu.4572697/">
         <img src="https://img.shields.io/badge/XDA_Thread-AAXLU-orange" alt="XDA Developers - AAXLU Thread">
+    </a> <a href="https://github.com/Rikj000/Android-Auto-XLauncher-Unlocked/blob/development/LICENSE">
+        <img src="https://img.shields.io/github/license/Rikj000/Android-Auto-XLauncher-Unlocked?label=License&logo=gnu" alt="GNU General Public License">
+    </a> <a href="https://github.com/Rikj000/Android-Auto-XLauncher-Unlocked/releases">
+        <img src="https://img.shields.io/github/downloads/Rikj000/Android-Auto-XLauncher-Unlocked/total?label=Total%20Downloads&logo=github" alt="Total Releases Downloaded from GitHub">
+    </a> <a href="https://github.com/Rikj000/Android-Auto-XLauncher-Unlocked/releases/latest">
+        <img src="https://img.shields.io/github/v/release/Rikj000/Android-Auto-XLauncher-Unlocked?include_prereleases&label=Latest%20Release&logo=github" alt="Latest Official Release on GitHub">
+    </a> <a href="https://www.iconomi.com/register?ref=zQQPK">
+        <img src="https://img.shields.io/badge/ICONOMI-Join-blue?logo=bitcoin&logoColor=white" alt="ICONOMI - The world’s largest crypto strategy provider">
     </a> <a href="https://www.buymeacoffee.com/Rikj000">
-        <img src="https://img.shields.io/badge/-Buy%20me%20a%20Coffee!-FFDD00?logo=buy-me-a-coffee&logoColor=black" alt="Buy me a Coffee as a way to sponsor this project!">
+        <img src="https://img.shields.io/badge/-Buy%20me%20a%20Coffee!-FFDD00?logo=buy-me-a-coffee&logoColor=black" alt="Buy me a Coffee as a way to sponsor this project!"> 
     </a>
 </p>
 
@@ -16,6 +20,10 @@ Custom Android Auto launcher, unleash your AA app, unlock more features!
 
 ## Installation
 
+#### MicroG Devices
+[`aaxlu`](https://github.com/Rikj000/Android-Auto-XLauncher-Unlocked) comes pre-included with [`aa4mg`](https://github.com/sn-00-x/aa4mg)!
+
+#### Other Devices
 1. Install [Magisk](https://topjohnwu.github.io/Magisk/install.html)
 2. Magisk => Settings => Magisk => Check `Zygisk`
 3. Install [LSPosed (Zygisk) + Shamiko](https://lsposed.org/)
