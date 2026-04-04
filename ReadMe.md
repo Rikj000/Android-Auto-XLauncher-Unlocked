@@ -9,8 +9,6 @@
         <img src="https://img.shields.io/github/downloads/Rikj000/Android-Auto-XLauncher-Unlocked/total?label=Total%20Downloads&logo=github" alt="Total Releases Downloaded from GitHub">
     </a> <a href="https://github.com/Rikj000/Android-Auto-XLauncher-Unlocked/releases/latest">
         <img src="https://img.shields.io/github/v/release/Rikj000/Android-Auto-XLauncher-Unlocked?include_prereleases&label=Latest%20Release&logo=github" alt="Latest Official Release on GitHub">
-    </a> <a href="https://www.iconomi.com/register?ref=zQQPK">
-        <img src="https://img.shields.io/badge/ICONOMI-Join-blue?logo=bitcoin&logoColor=white" alt="ICONOMI - The world’s largest crypto strategy provider">
     </a> <a href="https://www.buymeacoffee.com/Rikj000">
         <img src="https://img.shields.io/badge/-Buy%20me%20a%20Coffee!-FFDD00?logo=buy-me-a-coffee&logoColor=black" alt="Buy me a Coffee as a way to sponsor this project!"> 
     </a>
